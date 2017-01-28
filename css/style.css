@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "Georgia", "Times New Roman", Times, serif;
+	font-family: "Helvetica Neue", "Helvetica", "Roboto", Arial, sans-serif;
 	font-size: 18px;
 	color: #333333;
 	line-height: 150%;
@@ -39,7 +39,8 @@ nav > ul > li {
 }
 
 section {
-
+	background-color: white;
+	padding: 20px;
 }
 
 #main-bio,
