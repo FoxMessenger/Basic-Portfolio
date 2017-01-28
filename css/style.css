@@ -5,7 +5,7 @@ body {
 	font-size: 18px;
 	color: #333333;
 	line-height: 150%;
-	background: #efeee7;
+	background: gray;
 }
 header { background: white; }
 
@@ -13,11 +13,14 @@ h1 {
 	margin: 0;
 	margin-bottom: 20px;
 	padding: 20px 0;
+	width: 300px;
 	font-size: 28px;
 	color: #eee;
+	background-color: #39CCCC;
+	text-align: center;
 }
-h2 { font-size: 24px; }
-a  { color: #d21034; }
+h2 { font-size: 24px; margin-left: }
+a  { color: #d21034; text-decoration: none; }
 .container {
 	margin: 0 auto;
 	width: 1024px;
@@ -35,11 +38,15 @@ nav > ul > li {
 	display: inline-block;
 }
 
+section {
+
+}
+
 #main-bio,
 #contact-info,
 #bio-image    { float: left; }
-#main-bio     { width: 70%; }
-#contact-info { width: 30%; }
+#main-bio     { width: 70%; text-align: justify;}
+#contact-info { width: 20%; margin: 5px;}
 #bio-image {
 	margin-right: 20px;
 	width: 200px;
