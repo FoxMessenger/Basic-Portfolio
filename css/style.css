@@ -1,5 +1,10 @@
+html {
+	width: 100%;
+	min-width: 900px;
+}
+
 body {
-	margin: 0;
+	margin: 0; /* keeps the border from going above the header/h1 */
 	padding: 0;
 	font-family: "Helvetica Neue", "Helvetica", "Roboto", Arial, sans-serif;
 	font-size: 18px;
@@ -10,27 +15,29 @@ body {
 header { background: white; }
 
 h1 {
-	margin: 0;
-	margin-bottom: 20px;
-	padding: 20px 0;
+	margin-top: 0; /* keeps this at the top of the page */
+	margin-left: 5	0px;
+	padding: 20px 20px;
 	width: 300px;
 	font-size: 28px;
 	color: #eee;
-	background-color: #39CCCC;
+	background-color: #4aaaa5;
 	text-align: center;
 }
+
 h2 { font-size: 24px; margin-left: }
+
 a  { color: #d21034; text-decoration: none; }
+
 .container {
-	margin: 0 auto;
-	width: 1024px;
+	margin: 50px auto; /* give space between the header and the main content */
 }
 
 nav {	
 	color: lightgray;
 	float: right;
 	margin: 0;
-	margin-bottom: 20px;
+/*	margin-bottom: 20px;*/
 	padding: 10px 50px;
 }
 
@@ -45,18 +52,28 @@ section {
 
 #main-bio,
 #contact-info,
-#bio-image    { float: left; }
-#main-bio     { width: 70%; text-align: justify;}
-#contact-info { width: 20%; margin: 5px;}
+#bio-image    { float: left; border-color: #dddddd;}
+#main-bio     { 
+		width: 50%; 
+		padding: 20px; 
+		margin: 0 50px 0 50px; /* gives space between sections in the main content */
+		text-align: justify;
+	}
+
+#contact-info { 
+	width: 20%; 
+	padding: 0 50px 0;
+}
+
 #bio-image {
-	margin-right: 20px;
+	margin-right: 20px; /* gives breathing space to the image/photo */
 	width: 200px;
 	height: 200px;
 }
 
 
 footer {
-	background-color: #333333;
+	background-color: #666666;
 	text-align: center;
 	clear: both;
 	width: 100%;
