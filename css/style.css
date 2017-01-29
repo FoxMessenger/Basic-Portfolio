@@ -1,16 +1,16 @@
 html {
 	width: 100%;
-	min-width: 900px;
+	min-width: 730px;
 }
 
 body {
 	margin: 0; /* keeps the border from going above the header/h1 */
 	padding: 0;
 	font-family: "Helvetica Neue", "Helvetica", "Roboto", Arial, sans-serif;
-	font-size: 18px;
+	font-size: 12px;
 	color: #333333;
 	line-height: 150%;
-	background: gray;
+	background: #d3d3d3;
 }
 
 header { background: white; }
@@ -21,24 +21,26 @@ h1 {
 	padding: 20px 20px;
 	width: 300px;
 	font-size: 28px;
-	color: #eee;
+	color: white;
 	background-color: #4aaaa5;
 	text-align: center;
 }
 
-h2 { font-size: 24px; margin-left: }
+h2 { font-size: 12px; margin-left: }
 
-a  { color: #d21034; text-decoration: none; }
+a  { color: gray; text-decoration: none; }
+
+p  {color: gray;}
 
 .container {
 	margin: 50px auto; /* give space between the header and the main content */
 }
 
 nav {	
-	color: lightgray;
+	font-size: 12px;
+	color: gray;
 	float: right;
 	margin: 0;
-/*	margin-bottom: 20px;*/
 	padding: 10px 50px;
 }
 
@@ -49,6 +51,28 @@ nav > ul > li {
 section {
 	background-color: white;
 	padding: 20px;
+	margin-bottom: 100px;
+}
+
+.contact-icons {
+	margin-right: 20px; /* gives breathing space to the image/photo */
+	margin-bottom: 50px;
+	width: 40px;
+	height: 40px;
+}
+
+ /* -- because the linked in icon is "special" and by this I mean retarded -- */
+.contact-icons-linkedIn {
+	margin-right: 20px; /* gives breathing space to the image/photo */
+	margin-bottom: 48px; /*because the icon now has to be adjusted in size, so does the space it takes up*/
+	width: 46px;
+	height: 46px;
+}
+
+.grayBar {
+	background-color: lightgray;
+	padding: 1px; 
+	margin-bottom: 20px;
 }
 
 #main-bio,
@@ -57,16 +81,18 @@ section {
 
 
 #main-bio     { 
-		margin: 0 50px 0 50px; /* gives space between sections in the main content */
+		margin: 0 50px 70px 50px; /* gives space between sections in the main content */
 		width: 50%; 
-		padding: 20px; 
+		padding-left: 20px; 
 		text-align: justify;
 
 	}
 
 #contact-info { 
-	width: 20%; 
+
+	width: 17%; 
 	padding: 0 50px 0;
+	clear: right;
 }
 
 #bio-image {
@@ -75,8 +101,14 @@ section {
 	height: 200px;
 }
 
+#upperFooterbar {
+	background-color: #4aaaa5;
+	padding: 5px; 
+	clear: both;
+}
 
 footer {
+	position: relative; /*this keeps the bar at the bottom responsive to the text box above it. if the text box gets bigger, the bar moves further away*/
 	color: white;
 	font-size: 10px;
 	background-color: #666666;
@@ -85,7 +117,22 @@ footer {
 	width: 100%;
 	padding: 10px;
 	margin: 0;
-	border-color: aquamarine;
-	border-style: solid;
-    border-bottom: 1px;
+}
+
+/* --- PORTFOLIO --- */
+
+.divImages {
+		background-color: tomato;
+		padding: 50px;
+		margin: 10px;
+		width: 100px;
+		height: 100px;
+		float: left;
+}
+
+.divText {
+	color: white;
+	background-color: aquamarine;
+	padding: 20px;
+	width: 100px;
 }
