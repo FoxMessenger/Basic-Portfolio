@@ -5,12 +5,13 @@ html {
 
 body {
 	margin: 0; /* keeps the border from going above the header/h1 */
-	padding: 0;
+	/*padding: 0;*/
 	font-family: "Helvetica Neue", "Helvetica", "Roboto", Arial, sans-serif;
 	font-size: 12px;
 	color: #333333;
 	line-height: 150%;
-	background: #d3d3d3;
+	background-image: url("../images/cork-wallet.png");
+	background-repeat: repeat; 
 }
 
 header { background: white; }
@@ -122,17 +123,27 @@ footer {
 /* --- PORTFOLIO --- */
 
 .divImages {
-		background-color: tomato;
-		padding: 50px;
+		/*background-color: tomato;*/
 		margin: 10px;
-		width: 100px;
-		height: 100px;
+		width: 300px;
+		height: 300px;
 		float: left;
+		overflow: hidden;
 }
 
 .divText {
 	color: white;
-	background-color: aquamarine;
-	padding: 20px;
-	width: 100px;
+	background-color: #4aaaa5;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 210px;
+	width: 300px;
+	z-index: 1;
+	position: absolute;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px
+}
+
+.imageSizes {
 }
